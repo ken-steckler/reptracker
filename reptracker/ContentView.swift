@@ -14,19 +14,30 @@ struct ContentView: View {
         VStack {
             Button(action: {self.count += 1})
                 {
-                    Text("Increment").foregroundColor(Color.white)
+                    Image(systemName: "plus.circle").foregroundColor(Color.white).font(.system(size: 90))
                         .frame(width: 300, height: 120)
                         .padding()
                         .background(Color.red)
                         .cornerRadius(8)
                         .shadow(color: .red, radius: 3, x: 1, y: 1)
                 }
+            
             Text("\(count)").font(.system(size: 120))
+            
+            Button(action: {if (count > 0) {self.count -= 1}})
+                {
+                    Image(systemName: "minus.circle").foregroundColor(Color.white).font(.system(size: 50))
+                        .frame(width: 300, height: 50)
+                        .padding()
+                        .background(Color.green)
+                        .cornerRadius(8)
+                        .shadow(color: .green, radius: 3, x: 1, y: 1)
+                }
             
             Button(action: {
                 self.count = 0
             }) {
-                Text("Reset").foregroundColor(Color.white)
+                Text("R e s e t").foregroundColor(Color.white).font(.system(size: 25))
                     .frame(width: 300)
                     .padding()
                     .background(Color.blue)
