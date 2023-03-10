@@ -1,5 +1,6 @@
 # reptracker
 iOS Exercise Rep Counting App
+<img src="img/reptracker_1.png">
 
 ## Overview
 I created a simple rep tracking app to keep track of my reps so that I don't lose track. SwiftUI is used to make the app
