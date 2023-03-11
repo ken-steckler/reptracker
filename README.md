@@ -1,5 +1,5 @@
 # reptracker
-iOS Exercise Rep Counting App
+iOS Exercise Rep Counting App <br />
 <img src="img/reptracker_1.png" width="300">
 
 ## Overview
